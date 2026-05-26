@@ -1,76 +1,95 @@
+<div align="center">
+
 # Apurv Sheladiya
 
-### AI Product Builder | React and TypeScript | Visual Workflow Interfaces
+### Founder of OptiqAI | AI Product Maker | Visual Workflow Builder
 
-I build product-focused web experiences where AI, structured workflows, and visual interfaces meet. My public work demonstrates interactive editors, cloud architecture tooling, SaaS product UX, and reusable frontend systems built for fast iteration.
+I build AI-native products that move from an idea to a usable result: intelligent prompting, visual workspaces, precise editing, and polished product experiences.
 
-![TypeScript](https://img.shields.io/badge/TypeScript-application%20development-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-interactive%20UI-61DAFB?style=flat-square&logo=react&logoColor=111111)
-![Vite](https://img.shields.io/badge/Vite-fast%20product%20prototyping-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS%20systems-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+[![OptiqAI](https://img.shields.io/badge/OptiqAI-Live_AI_Visual_Content_Studio-111827?style=for-the-badge&logo=sparkles&logoColor=white)](https://optiq-ai.com/)
+[![Public Builds](https://img.shields.io/badge/Public_Builds-Explore_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](#selected-public-builds)
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=111111)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Product Design](https://img.shields.io/badge/Product_Design-Visual_Workflows-7C3AED?style=flat-square)
+![AI UX](https://img.shields.io/badge/AI_UX-Human_in_Control-0F766E?style=flat-square)
+
+</div>
+
+## Flagship Product
+
+### [OptiqAI](https://optiq-ai.com/) - AI Visual Content Studio
+
+OptiqAI is my product for turning creative ideas into finished visual assets. It is built for creators, founders, and marketing workflows that need to generate images, refine them with focused edits, and export content without moving between disconnected tools.
+
+| Product journey | What the experience enables |
+| --- | --- |
+| **Describe** | Start with natural-language creative direction for social posts, campaigns, carousels, and visual concepts. |
+| **Generate** | Turn direction into images through an AI-assisted workflow with model choice and visible creative iteration. |
+| **Refine** | Make targeted changes with text editing, element edits, magic editing, and guided prompt refinement. |
+| **Export** | Produce ready-to-use visual assets for content and marketing workflows. |
+
+**The product focus:** make professional visual creation feel like a guided workflow, not a collection of isolated generation buttons.
+
+```text
+Creative intent -> AI-assisted direction -> Canvas refinement -> Export-ready asset
+```
+
+[Visit the live product](https://optiq-ai.com/) | [Explore pricing and workflows](https://optiq-ai.com/pricing)
 
 ## What I Build
 
-| Focus | What I deliver |
+| Product area | My focus |
 | --- | --- |
-| AI-assisted product interfaces | Prompt-driven interactions, analysis panels, assistant UX, structured results, and human-review surfaces. |
-| Visual editors and workspaces | Diagram canvases, component libraries, controls, navigation, property panels, and export-oriented workflows. |
-| SaaS product experiences | Landing pages, dashboards, authentication screens, pricing flows, roadmaps, and conversion-focused journeys. |
-| Frontend systems | Type-safe React components, reusable UI primitives, responsive layout systems, and maintainable feature organization. |
+| AI-first products | Turning model capabilities into clear workflows, useful controls, and understandable results. |
+| Visual workspaces | Canvas-driven editors, panels, layers, tools, history, exports, and interaction-heavy UX. |
+| SaaS experiences | Landing pages, onboarding, account journeys, plans, content surfaces, and conversion-aware design. |
+| Product systems | Reusable React components, type-safe frontend structure, consistent UI language, and scalable feature organization. |
 
-## Public Projects
+## Product Thinking
+
+- AI should accelerate decisions while the user stays in control of the final output.
+- A strong editor connects generation, editing, organization, and export in one coherent workflow.
+- Product quality includes the entire journey: discovery, onboarding, creation, iteration, and delivery.
+- I build interfaces that explain complex capabilities through interaction rather than technical friction.
+
+## Selected Public Builds
 
 ### [Arch AI Blueprint Forge](https://github.com/Apurvsheldiya25/arch-ai-blueprint-forge-42)
 
-An interactive cloud architecture diagram editor designed around visual system planning and AI-assisted review.
+An interactive cloud architecture diagram editor prototype for planning multi-cloud systems and exploring AI-assisted architecture review.
 
-**What it demonstrates**
-
-- React Flow diagram workspace with canvas navigation and minimap controls.
-- Multi-cloud component palette covering AWS, Azure, and Google Cloud concepts.
-- Editable architecture nodes, templates, dashboard views, documentation, pricing, and account screens.
-- AI assistant and analysis interface patterns for reviewing architecture designs.
-- Product-style editor structure with reusable components and export-oriented actions.
-
-**Stack:** React, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Flow, Lucide React
+| Demonstrates | Stack |
+| --- | --- |
+| React Flow canvas, AWS/Azure/GCP component palette, editable nodes, minimap/navigation controls, templates, dashboard screens, AI analysis UI, and export-oriented actions. | React, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Flow |
 
 ### [Cloud Architect AI Flow](https://github.com/Apurvsheldiya25/cloud-architect-ai-flow)
 
-A product-site prototype for an AI-assisted cloud architecture workflow, focused on clear positioning and SaaS conversion UX.
+A product-site prototype for an AI-assisted cloud architecture platform, focused on product narrative and SaaS user journeys.
 
-**What it demonstrates**
+| Demonstrates | Stack |
+| --- | --- |
+| Landing, feature, pricing, roadmap, contact, sign-in and sign-up surfaces with responsive multi-cloud positioning and reusable UI composition. | React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Framer Motion |
 
-- Structured landing experience for an architecture-focused AI product.
-- Feature, pricing, roadmap, contact, login, and signup screens.
-- Multi-cloud positioning across AWS, Azure, and Google Cloud.
-- Responsive component composition using a consistent UI system.
-- Rapid product prototyping suitable for static deployment and iteration.
-
-**Stack:** React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Framer Motion
-
-## Engineering Strengths
-
-- Translating complex product ideas into clear interactive experiences.
-- Designing editor-style UX with canvases, panels, stateful controls, and structured workflows.
-- Building AI-facing UI that keeps the user in control through visible actions and review points.
-- Creating reusable frontend architecture rather than isolated demo screens.
-- Balancing product presentation with implementation detail and maintainable TypeScript code.
-
-## Current Public Stack
+## Builder Toolkit
 
 ```text
-TypeScript / React / Vite
-Tailwind CSS / shadcn-ui / component-driven UI
-React Flow / interactive visual tooling
-Framer Motion / polished product presentation
-AI-assisted UX / SaaS workflow design
+Product:     AI workflows / visual editors / SaaS experience design
+Frontend:    TypeScript / React / Vite / Tailwind CSS / component systems
+Interaction: Canvas interfaces / diagram tooling / motion / responsive UX
+Delivery:    Product positioning / iterative building / public demos
 ```
 
-## Explore The Work
+## Current Direction
 
-| Repository | Best starting point |
-| --- | --- |
-| [Arch AI Blueprint Forge](https://github.com/Apurvsheldiya25/arch-ai-blueprint-forge-42) | Explore the diagram editor, cloud-component workflow, and AI analysis UI. |
-| [Cloud Architect AI Flow](https://github.com/Apurvsheldiya25/cloud-architect-ai-flow) | Explore the product narrative, pricing and feature UX, and SaaS page system. |
+I am focused on building AI products that help people create, plan, and communicate visually: products where the interface makes powerful technology usable, deliberate, and commercially meaningful.
 
-Public repositories listed here are the projects intentionally presented in this portfolio.
+<div align="center">
+
+### Building practical AI products with strong visual workflows
+
+[OptiqAI](https://optiq-ai.com/) | [Arch AI Blueprint Forge](https://github.com/Apurvsheldiya25/arch-ai-blueprint-forge-42) | [Cloud Architect AI Flow](https://github.com/Apurvsheldiya25/cloud-architect-ai-flow)
+
+</div>
