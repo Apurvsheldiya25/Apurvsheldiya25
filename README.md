@@ -39,6 +39,21 @@ Creative intent -> AI-assisted direction -> Canvas refinement -> Export-ready as
 
 [Visit the live product](https://optiq-ai.com/) | [Explore pricing and workflows](https://optiq-ai.com/pricing)
 
+## Product Portfolio
+
+My work extends beyond a single app. I build connected product experiments and production surfaces around AI creation, visual interaction, and usable SaaS workflows.
+
+| Product track | What I build |
+| --- | --- |
+| AI creative production | Prompt-to-asset experiences, precision editing, guided refinement, export flows, and creator-facing product journeys. |
+| Mobile product delivery | Mobile-ready shells and device workflows that bring product experiences beyond the desktop browser. |
+| Intelligent interaction | Chat, voice, workflow orchestration, structured responses, and assistant-led user experiences. |
+| Visual editor systems | Canvas interactions, element manipulation, image transformation, panels, history, and tool-driven creation. |
+| Architecture tooling | Cloud diagram editors, multi-cloud planning interfaces, and AI-supported analysis experiences. |
+| Vertical SaaS exploration | Product experiments across commerce, services, collaboration, content, and workflow-focused experiences. |
+
+Additional product work is intentionally represented at the capability level; protected source repositories and implementation details are not published here.
+
 ## What I Build
 
 | Product area | My focus |
@@ -81,6 +96,12 @@ Frontend:    TypeScript / React / Vite / Tailwind CSS / component systems
 Interaction: Canvas interfaces / diagram tooling / motion / responsive UX
 Delivery:    Product positioning / iterative building / public demos
 ```
+
+## GitHub Achievement
+
+| Achievement | Verified status |
+| --- | --- |
+| [Quickdraw](https://github.com/Apurvsheldiya25?achievement=quickdraw&tab=achievements) | Earned and currently visible on my GitHub profile. |
 
 ## Current Direction
 
