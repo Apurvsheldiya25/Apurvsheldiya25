@@ -7,6 +7,7 @@
 I build AI-native products that move from an idea to a usable result: intelligent prompting, visual workspaces, precise editing, and polished product experiences.
 
 [![OptiqAI](https://img.shields.io/badge/OptiqAI-Live_AI_Visual_Content_Studio-111827?style=for-the-badge&logo=sparkles&logoColor=white)](https://optiq-ai.com/)
+[![Clebby Code](https://img.shields.io/badge/Clebby_Code-Terminal_AI_Agent-0F172A?style=for-the-badge&logo=gnometerminal&logoColor=white)](https://github.com/Apurvsheldiya25/Clebby-code)
 [![Public Builds](https://img.shields.io/badge/Public_Builds-Explore_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](#selected-public-builds)
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -48,6 +49,7 @@ My work extends beyond a single app. I build connected product experiments and p
 | AI creative production | Prompt-to-asset experiences, precision editing, guided refinement, export flows, and creator-facing product journeys. |
 | Mobile product delivery | Mobile-ready shells and device workflows that bring product experiences beyond the desktop browser. |
 | Intelligent interaction | Chat, voice, workflow orchestration, structured responses, and assistant-led user experiences. |
+| Developer tooling | Terminal AI agents, secure CLI authentication, CI release workflows, and repository automation. |
 | Visual editor systems | Canvas interactions, element manipulation, image transformation, panels, history, and tool-driven creation. |
 | Architecture tooling | Cloud diagram editors, multi-cloud planning interfaces, and AI-supported analysis experiences. |
 | Vertical SaaS exploration | Product experiments across commerce, services, collaboration, content, and workflow-focused experiences. |
@@ -61,6 +63,7 @@ Additional product work is intentionally represented at the capability level; pr
 | AI-first products | Turning model capabilities into clear workflows, useful controls, and understandable results. |
 | Visual workspaces | Canvas-driven editors, panels, layers, tools, history, exports, and interaction-heavy UX. |
 | SaaS experiences | Landing pages, onboarding, account journeys, plans, content surfaces, and conversion-aware design. |
+| Developer tools | Authenticated CLIs, repository-aware agents, local diagnostics, GitHub Actions, and npm packaging. |
 | Product systems | Reusable React components, type-safe frontend structure, consistent UI language, and scalable feature organization. |
 
 ## Product Thinking
@@ -71,6 +74,14 @@ Additional product work is intentionally represented at the capability level; pr
 - I build interfaces that explain complex capabilities through interaction rather than technical friction.
 
 ## Selected Public Builds
+
+### [Clebby Code](https://github.com/Apurvsheldiya25/Clebby-code)
+
+A terminal-first AI development companion for working inside real repositories, with authenticated Supabase sessions, workspace-aware Ask/Agent/Plan modes, local diagnostics, GitHub Actions CI, and npm package hardening.
+
+| Demonstrates | Stack |
+| --- | --- |
+| Secure CLI auth with email-link callback, workspace indexing, autonomous agent flows, shell safety controls, Dependabot setup, protected-branch CI, and release-ready npm packaging. | TypeScript, Bun, Supabase Auth, OpenRouter, GitHub Actions, npm provenance |
 
 ### [Arch AI Blueprint Forge](https://github.com/Apurvsheldiya25/arch-ai-blueprint-forge-42)
 
@@ -94,7 +105,8 @@ A product-site prototype for an AI-assisted cloud architecture platform, focused
 Product:     AI workflows / visual editors / SaaS experience design
 Frontend:    TypeScript / React / Vite / Tailwind CSS / component systems
 Interaction: Canvas interfaces / diagram tooling / motion / responsive UX
-Delivery:    Product positioning / iterative building / public demos
+Tooling:     Terminal AI agents / Supabase Auth / GitHub Actions / npm packaging
+Delivery:    Product positioning / iterative building / public demos / release workflows
 ```
 
 ## GitHub Achievement
@@ -111,6 +123,6 @@ I am focused on building AI products that help people create, plan, and communic
 
 ### Building practical AI products with strong visual workflows
 
-[OptiqAI](https://optiq-ai.com/) | [Arch AI Blueprint Forge](https://github.com/Apurvsheldiya25/arch-ai-blueprint-forge-42) | [Cloud Architect AI Flow](https://github.com/Apurvsheldiya25/cloud-architect-ai-flow)
+[OptiqAI](https://optiq-ai.com/) | [Clebby Code](https://github.com/Apurvsheldiya25/Clebby-code) | [Arch AI Blueprint Forge](https://github.com/Apurvsheldiya25/arch-ai-blueprint-forge-42) | [Cloud Architect AI Flow](https://github.com/Apurvsheldiya25/cloud-architect-ai-flow)
 
 </div>
