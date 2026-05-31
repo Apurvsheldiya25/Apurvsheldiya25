@@ -2,9 +2,9 @@
 
 # Apurv Sheladiya
 
-### Founder of OptiqAI | AI Product Maker | Visual Workflow Builder
+### Founder of OptiqAI | AI Product Builder | Visual Workflow Systems | Developer Tooling
 
-I build AI-native products that move from an idea to a usable result: intelligent prompting, visual workspaces, precise editing, and polished product experiences.
+I build AI-native products that move from an idea to a usable result: intelligent prompting, visual workspaces, secure developer workflows, precise editing, and polished product experiences.
 
 [![OptiqAI](https://img.shields.io/badge/OptiqAI-Live_AI_Visual_Content_Studio-111827?style=for-the-badge&logo=sparkles&logoColor=white)](https://optiq-ai.com/)
 [![Clebby Code](https://img.shields.io/badge/Clebby_Code-Terminal_AI_Agent-0F172A?style=for-the-badge&logo=gnometerminal&logoColor=white)](https://github.com/Apurvsheldiya25/Clebby-code)
@@ -75,6 +75,8 @@ Additional product work is intentionally represented at the capability level; pr
 
 ## Selected Public Builds
 
+These public repositories are portfolio-safe versions of product thinking I use in real builds: clean setup, documented architecture boundaries, no private credentials, CI checks, dependency hygiene, and clear product positioning.
+
 ### [Clebby Code](https://github.com/Apurvsheldiya25/Clebby-code)
 
 A terminal-first AI development companion for working inside real repositories, with authenticated Supabase sessions, workspace-aware Ask/Agent/Plan modes, local diagnostics, GitHub Actions CI, and npm package hardening.
@@ -83,21 +85,31 @@ A terminal-first AI development companion for working inside real repositories, 
 | --- | --- |
 | Secure CLI auth with email-link callback, workspace indexing, autonomous agent flows, shell safety controls, Dependabot setup, protected-branch CI, and release-ready npm packaging. | TypeScript, Bun, Supabase Auth, OpenRouter, GitHub Actions, npm provenance |
 
+**Why it matters:** shows I can build beyond UI: CLI architecture, auth flows, release security, package publishing, and repository automation.
+
 ### [Arch AI Blueprint Forge](https://github.com/Apurvsheldiya25/arch-ai-blueprint-forge-42)
 
-An interactive cloud architecture diagram editor prototype for planning multi-cloud systems and exploring AI-assisted architecture review.
+An interactive cloud architecture diagram editor prototype for planning multi-cloud systems and exploring AI-assisted architecture review. The repo is organized with architecture notes, security policy, env hygiene, CI, Dependabot, and a localhost-only dev server.
 
 | Demonstrates | Stack |
 | --- | --- |
-| React Flow canvas, AWS/Azure/GCP component palette, editable nodes, minimap/navigation controls, templates, dashboard screens, AI analysis UI, and export-oriented actions. | React, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Flow |
+| React Flow canvas, AWS/Azure/GCP component palette, editable nodes, minimap/navigation controls, templates, dashboard screens, AI analysis UI, export-oriented actions, and public-repo security hygiene. | React, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Flow, GitHub Actions |
 
 ### [Cloud Architect AI Flow](https://github.com/Apurvsheldiya25/cloud-architect-ai-flow)
 
-A product-site prototype for an AI-assisted cloud architecture platform, focused on product narrative and SaaS user journeys.
+A product-site prototype for an AI-assisted cloud architecture platform, focused on product narrative and SaaS user journeys. The repo presents a clean public SaaS prototype with architecture docs, security policy, env hygiene, CI, and dependency monitoring.
 
 | Demonstrates | Stack |
 | --- | --- |
-| Landing, feature, pricing, roadmap, contact, sign-in and sign-up surfaces with responsive multi-cloud positioning and reusable UI composition. | React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Framer Motion |
+| Landing, feature, pricing, roadmap, contact, sign-in and sign-up surfaces with responsive multi-cloud positioning, reusable UI composition, and production-minded repo hygiene. | React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Framer Motion, GitHub Actions |
+
+## Public Repo Standards
+
+| Standard | How I apply it |
+| --- | --- |
+| Security hygiene | No committed secrets, `.env.example` placeholders, security policy, localhost-only dev servers, and dependency audits. |
+| Engineering confidence | TypeScript checks, production builds, lint baselines, CI workflows, Dependabot, and clear contribution rules. |
+| Product clarity | Each repo explains what is real, what is prototype-only, and where production boundaries would live. |
 
 ## Builder Toolkit
 
