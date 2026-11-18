@@ -28,7 +28,7 @@ const apurv = {
   loves:     ["AI UX", "visual editors", "pixel-perfect UI"],
   stack:     ["TypeScript", "React", "Electron", "Supabase"],
   shipping:  "every week",
-  motto:     "AI speeds you up — you stay in control.",
+  motto:     "AI speeds you up - you stay in control.",
 };
 ```
 
@@ -44,7 +44,7 @@ const apurv = {
 </tr>
 </table>
 
-## 🕹️ Flagship quest — [OptiqAI](https://optiq-ai.com/)
+## 🕹️ Flagship quest - [OptiqAI](https://optiq-ai.com/)
 
 <table>
 <tr>
@@ -69,21 +69,21 @@ const apurv = {
 <td width="33%" valign="top">
 
 **[Arch AI Blueprint Forge](https://github.com/Apurvsheldiya25/arch-ai-blueprint-forge-42)**<br/>
-<sub>Multi-cloud diagram editor — React Flow canvas, AWS/Azure/GCP palette, templates, AI review.</sub><br/><br/>
+<sub>Multi-cloud diagram editor - React Flow canvas, AWS/Azure/GCP palette, templates, AI review.</sub><br/><br/>
 <img src="https://img.shields.io/badge/React_Flow-ff4fd8?style=flat-square"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
 
 </td>
 <td width="33%" valign="top">
 
 **[Cloud Architect AI Flow](https://github.com/Apurvsheldiya25/cloud-architect-ai-flow)**<br/>
-<sub>Product site for an AI cloud-architecture platform — landing, pricing, roadmap, auth journeys.</sub><br/><br/>
+<sub>Product site for an AI cloud-architecture platform - landing, pricing, roadmap, auth journeys.</sub><br/><br/>
 <img src="https://img.shields.io/badge/Framer_Motion-7c5cff?style=flat-square"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
 
 </td>
 <td width="33%" valign="top">
 
 **Clebby Code** <sub>· private beta</sub><br/>
-<sub>Terminal-first AI dev companion — Ask / Agent / Plan modes, Supabase auth, hardened npm releases.</sub><br/><br/>
+<sub>Terminal-first AI dev companion - Ask / Agent / Plan modes, Supabase auth, hardened npm releases.</sub><br/><br/>
 <img src="https://img.shields.io/badge/Bun-000?style=flat-square&logo=bun&logoColor=white"/> <img src="https://img.shields.io/badge/CLI-3df5ff?style=flat-square"/>
 
 </td>
