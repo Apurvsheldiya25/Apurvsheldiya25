@@ -29,7 +29,9 @@ jobs:
 
       - name: Pixel stats card (private contributions included)
         env:
-          GH_TOKEN: ${{ github.token }}
+          # Optional read-only token that can see private repos -> exact PR / review / repo counts.
+          # Without it the card shows only calendar numbers, which already include private work.
+          GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
         run: |
           mkdir -p dist
           python3 scripts/stats_card.py dist/pixel-stats.svg
