@@ -10,7 +10,7 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "assets")
 os.makedirs(OUT, exist_ok=True)
 
 NIGHT, NIGHT2 = "#070b1a", "#1a1040"
-PINK, CYAN, YELLOW, GREEN, PURPLE, WHITE = "#ff4fd8", "#3df5ff", "#ffd23f", "#6bff8a", "#7c5cff", "#f4f1ff"
+PINK, CYAN, YELLOW, GREEN, PURPLE, WHITE = "#ff8a3d", "#3df5ff", "#ffd23f", "#6bff8a", "#7c5cff", "#f4f1ff"
 
 # ---------------------------------------------------------------- 5x7 pixel font
 F = {
@@ -415,7 +415,7 @@ def desk():
     # developer (back view) on chair, nodding while typing
     dev = (
         R(34, 32, 12, 3, "#2b1a0f") + R(33, 35, 14, 6, "#2b1a0f") + R(34, 41, 12, 1, "#f1c27d")
-        + R(30, 42, 20, 6, PINK) + R(28, 45, 24, 10, PINK) + R(39, 42, 2, 4, "#c23aa8")
+        + R(30, 42, 20, 6, PINK) + R(28, 45, 24, 10, PINK) + R(39, 42, 2, 4, "#d9661f")
         + R(36, 39, 1, 3, CYAN) + R(43, 39, 1, 3, CYAN) + R(35, 38, 10, 1, CYAN)
     )
     parts.append(f'<g class="nod">{dev}</g>')

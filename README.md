@@ -2,12 +2,12 @@
 
 <p align="center">
   <a href="https://github.com/Apurvsheldiya25">
-    <img src="https://readme-typing-svg.demolab.com/?font=Press+Start+2P&size=16&duration=3200&pause=900&color=FF4FD8&center=true&vCenter=true&width=760&height=44&lines=%3E+Founder+%40+OptiqAI;%3E+Building+AI-native+products;%3E+Shipping+desktop+apps+with+Electron;%3E+Visual+editors+%2B+AI+UX;%3E+Idea+%E2%86%92+Build+%E2%86%92+Ship+%E2%86%92+Repeat" alt="Founder at OptiqAI. Building AI-native products. Shipping desktop apps. Visual editors and AI UX."/>
+    <img src="https://readme-typing-svg.demolab.com/?font=Press+Start+2P&size=16&duration=3200&pause=900&color=ff8a3d&center=true&vCenter=true&width=760&height=44&lines=%3E+Founder+%40+OptiqAI;%3E+Building+AI-native+products;%3E+Shipping+desktop+apps+with+Electron;%3E+Visual+editors+%2B+AI+UX;%3E+Idea+%E2%86%92+Build+%E2%86%92+Ship+%E2%86%92+Repeat" alt="Founder at OptiqAI. Building AI-native products. Shipping desktop apps. Visual editors and AI UX."/>
   </a>
 </p>
 
 <p align="center">
-  <a href="https://optiq-ai.com/"><img src="https://img.shields.io/badge/OptiqAI-Live_Product-ff4fd8?style=for-the-badge&logo=sparkles&logoColor=white&labelColor=0d1117"/></a>
+  <a href="https://optiq-ai.com/"><img src="https://img.shields.io/badge/OptiqAI-Live_Product-ff8a3d?style=for-the-badge&logo=sparkles&logoColor=white&labelColor=0d1117"/></a>
   <a href="https://optiq-ai.com/pricing"><img src="https://img.shields.io/badge/Pricing-Plans-7c5cff?style=for-the-badge&logo=stripe&logoColor=white&labelColor=0d1117"/></a>
   <a href="#-public-builds"><img src="https://img.shields.io/badge/Public_Builds-Explore-3df5ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117"/></a>
   <img src="https://komarev.com/ghpvc/?username=Apurvsheldiya25&style=for-the-badge&color=ffd23f&labelColor=0d1117&label=VISITORS" alt="Profile views"/>
@@ -70,7 +70,7 @@ const apurv = {
 
 **[Arch AI Blueprint Forge](https://github.com/Apurvsheldiya25/arch-ai-blueprint-forge-42)**<br/>
 <sub>Multi-cloud diagram editor - React Flow canvas, AWS/Azure/GCP palette, templates, AI review.</sub><br/><br/>
-<img src="https://img.shields.io/badge/React_Flow-ff4fd8?style=flat-square"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/React_Flow-ff8a3d?style=flat-square"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
 
 </td>
 <td width="33%" valign="top">
@@ -93,15 +93,15 @@ const apurv = {
 ## 🏆 High scores
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Apurvsheldiya25&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0d1117&title_color=ff4fd8&icon_color=3df5ff&text_color=f4f1ff&ring_color=ff4fd8&rank_icon=github" alt="GitHub stats"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Apurvsheldiya25&layout=compact&langs_count=8&hide_border=true&bg_color=0d1117&title_color=ff4fd8&text_color=f4f1ff" alt="Top languages"/>
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Apurvsheldiya25&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0d1117&title_color=ff8a3d&icon_color=3df5ff&text_color=f4f1ff&ring_color=ff8a3d&rank_icon=github" alt="GitHub stats"/>
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Apurvsheldiya25&layout=compact&langs_count=8&hide_border=true&bg_color=0d1117&title_color=ff8a3d&text_color=f4f1ff" alt="Top languages"/>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Apurvsheldiya25&hide_border=true&background=0d1117&ring=ff4fd8&fire=ffd23f&currStreakLabel=3df5ff&sideLabels=f4f1ff&currStreakNum=f4f1ff&sideNums=f4f1ff&dates=8a84b8&stroke=1c1245" alt="Contribution streak"/>
+  <img src="https://streak-stats.demolab.com/?user=Apurvsheldiya25&hide_border=true&background=0d1117&ring=ff8a3d&fire=ffd23f&currStreakLabel=3df5ff&sideLabels=f4f1ff&currStreakNum=f4f1ff&sideNums=f4f1ff&dates=8a84b8&stroke=1c1245" alt="Contribution streak"/>
 </p>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Apurvsheldiya25&bg_color=0d1117&color=f4f1ff&line=ff4fd8&point=3df5ff&area=true&area_color=7c5cff&hide_border=true&radius=8" width="100%" alt="Contribution activity graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Apurvsheldiya25&bg_color=0d1117&color=f4f1ff&line=ff8a3d&point=3df5ff&area=true&area_color=7c5cff&hide_border=true&radius=8" width="100%" alt="Contribution activity graph"/>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Apurvsheldiya25/Apurvsheldiya25/output/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph"/>
