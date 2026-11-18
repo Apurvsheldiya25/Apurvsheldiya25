@@ -338,13 +338,108 @@ def footer():
     save("pixel-footer.svg", svg(W, H, "\n".join(parts), style, "Press start to collaborate"))
 
 
+# ---------------------------------------------------------------- desk scene
+def desk():
+    """Animated pixel scene: coding at night with a window, monitor, mug and cat."""
+    rnd = random.Random(7)
+    p, W, H = 6, 480, 360
+    R = lambda x, y, w, h, c, extra="": f'<rect x="{x * p}" y="{y * p}" width="{w * p}" height="{h * p}" fill="{c}"{extra}/>'
+    parts = [
+        '<defs><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#140c33"/>'
+        '<stop offset="1" stop-color="#22145a"/></linearGradient>'
+        f'<clipPath id="scr"><rect x="{23 * p}" y="{13 * p}" width="{34 * p}" height="{21 * p}"/></clipPath>'
+        f'<clipPath id="win"><rect x="{4 * p}" y="{5 * p}" width="{14 * p}" height="{18 * p}"/></clipPath></defs>',
+        f'<rect width="{W}" height="{H}" fill="url(#wall)"/>',
+    ]
+    # window with sky, moon, stars, distant city
+    parts.append(R(3, 4, 16, 20, "#3a2a7a"))
+    parts.append(R(4, 5, 14, 18, "#0a0f2a"))
+    g = ['<g clip-path="url(#win)">']
+    for _ in range(14):
+        x, y = rnd.randint(4, 17), rnd.randint(5, 14)
+        g.append(R(x, y, 1, 1, WHITE, f' class="tw" style="animation-delay:-{rnd.uniform(0, 3):.1f}s"'))
+    g.append(R(13, 7, 3, 3, "#f5e9c8"))
+    g.append(R(13, 7, 1, 1, "#0a0f2a"))
+    for x in range(4, 18, 2):
+        hgt = rnd.randint(3, 7)
+        g.append(R(x, 23 - hgt, 2, hgt, "#1c1245"))
+        if rnd.random() < 0.6:
+            g.append(R(x, 23 - hgt + 1, 1, 1, YELLOW, ' class="fl"'))
+    g.append("</g>")
+    parts += g
+    parts.append(R(10, 5, 1, 18, "#3a2a7a"))
+    parts.append(R(4, 13, 14, 1, "#3a2a7a"))
+    # shelf with books + plant
+    parts.append(R(60, 10, 16, 1, "#4a3420"))
+    for i, c in enumerate([PINK, CYAN, YELLOW, PURPLE, GREEN]):
+        parts.append(R(61 + i * 2, 5 + (i % 2), 2, 5 - (i % 2), c))
+    parts.append(R(72, 8, 3, 2, "#a0522d"))
+    parts.append(f'<g class="sway" style="transform-origin:{73.5 * p}px {8 * p}px">' + R(73, 5, 1, 3, GREEN) + R(72, 5, 1, 1, GREEN) + R(74, 4, 1, 2, GREEN) + "</g>")
+    # desk
+    parts.append(R(0, 44, 80, 2, "#5b3a8a"))
+    parts.append(R(0, 46, 80, 1, "#3a2466"))
+    parts.append(R(4, 47, 2, 13, "#3a2466"))
+    parts.append(R(74, 47, 2, 13, "#3a2466"))
+    # lamp glow
+    parts.append(f'<ellipse class="glow" cx="{66 * p}" cy="{44 * p}" rx="{10 * p}" ry="{2 * p}" fill="{YELLOW}" opacity=".18"/>')
+    parts += [R(65, 43, 4, 1, "#2a2a40"), R(66, 33, 1, 10, "#2a2a40"), R(63, 30, 6, 3, "#ff8a3d"), R(64, 33, 4, 1, YELLOW, ' class="glow"')]
+    # monitor
+    parts += [R(22, 12, 36, 23, "#2a2a40"), R(23, 13, 34, 21, "#05081a"), R(38, 35, 4, 6, "#2a2a40"), R(33, 41, 14, 3, "#2a2a40")]
+    lines, y = [], 0
+    for i in range(40):
+        ind = [0, 2, 2, 4, 4, 6][rnd.randrange(6)]
+        x = 24 + ind
+        segs = rnd.randint(1, 3)
+        for _ in range(segs):
+            w = rnd.randint(2, 6)
+            if x + w > 55:
+                break
+            lines.append(f'<rect x="{x * p}" y="{(14 + y) * p}" width="{w * p}" height="{p - 2}" fill="{rnd.choice([PINK, CYAN, YELLOW, GREEN, PURPLE, WHITE])}"/>')
+            x += w + 1
+        y += 2 if rnd.random() < 0.85 else 4
+    scroll = y * p
+    parts.append(f'<g clip-path="url(#scr)"><g class="code">{"".join(lines)}</g></g>')
+    parts.append(R(24, 32, 2, 1, GREEN, ' class="blink"'))
+    parts.append(R(56, 33, 1, 1, GREEN, ' class="blink"'))
+    # mug with steam
+    parts += [R(52, 40, 4, 4, WHITE), R(56, 41, 1, 2, WHITE), R(52, 40, 4, 1, "#6b3e26")]
+    for i in range(3):
+        parts.append(R(53 + (i % 2), 38, 1, 1, "#b7b2d9", f' class="steam" style="animation-delay:{i * 0.6:.1f}s"'))
+    # cat sitting on desk, tail wags (two frames)
+    cat = [(9, 36, 6, 7), (10, 34, 4, 3), (9, 33, 1, 2), (13, 33, 1, 2)]
+    for x, y_, w, h in cat:
+        parts.append(R(x, y_, w, h, "#e8e6f0"))
+    parts += [R(11, 35, 1, 1, GREEN, ' class="blink2"'), R(13, 35, 1, 1, GREEN, ' class="blink2"'), R(12, 36, 1, 1, PINK)]
+    parts.append('<g class="tA">' + R(15, 40, 3, 1, "#e8e6f0") + R(17, 37, 1, 3, "#e8e6f0") + "</g>")
+    parts.append('<g class="tB">' + R(15, 42, 4, 1, "#e8e6f0") + R(18, 40, 1, 2, "#e8e6f0") + "</g>")
+    # developer (back view) on chair, nodding while typing
+    dev = (
+        R(34, 32, 12, 3, "#2b1a0f") + R(33, 35, 14, 6, "#2b1a0f") + R(34, 41, 12, 1, "#f1c27d")
+        + R(30, 42, 20, 6, PINK) + R(28, 45, 24, 10, PINK) + R(39, 42, 2, 4, "#c23aa8")
+        + R(36, 39, 1, 3, CYAN) + R(43, 39, 1, 3, CYAN) + R(35, 38, 10, 1, CYAN)
+    )
+    parts.append(f'<g class="nod">{dev}</g>')
+    parts += [R(29, 50, 22, 10, "#2a2a40"), R(30, 51, 20, 8, "#3a3a58")]
+    parts.append(f'<rect width="{W}" height="{H}" fill="url(#sc)"/>')
+    parts.insert(0, '<defs><pattern id="sc" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000" opacity=".18"/></pattern></defs>')
+    style = (
+        ".tw{animation:tw 2.5s steps(2) infinite}@keyframes tw{50%{opacity:.15}}"
+        ".fl{animation:tw 4s steps(1) infinite}"
+        ".blink{animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}"
+        ".blink2{animation:ey 4s steps(1) infinite}@keyframes ey{0%,92%{opacity:1}93%,100%{opacity:0}}"
+        f".code{{animation:code 14s steps({scroll // p}) infinite}}@keyframes code{{to{{transform:translateY(-{scroll - 18 * p}px)}}}}"
+        ".steam{animation:st 1.8s steps(6) infinite}@keyframes st{0%{transform:translateY(0);opacity:.9}100%{transform:translateY(-36px);opacity:0}}"
+        ".tA{animation:tA 1.2s steps(1) infinite}@keyframes tA{50%{opacity:0}}"
+        ".tB{opacity:0;animation:tB 1.2s steps(1) infinite}@keyframes tB{50%{opacity:1}}"
+        ".nod{animation:nod .8s steps(1) infinite}@keyframes nod{50%{transform:translateY(3px)}}"
+        ".glow{animation:gl 3s steps(3) infinite}@keyframes gl{50%{opacity:.35}}"
+        ".sway{animation:sw 3s steps(2) infinite}@keyframes sw{50%{transform:rotate(8deg)}}"
+    )
+    save("pixel-desk.svg", svg(W, H, "\n".join(parts), style, "Pixel art: coding late at night with a cat on the desk"))
+
+
 if __name__ == "__main__":
+    desk()
     hero()
-    hud()
     divider()
     footer()
-    label("title-flagship.svg", "FLAGSHIP QUEST", PINK)
-    label("title-build.svg", "WHAT I BUILD", CYAN)
-    label("title-public.svg", "PUBLIC BUILDS", YELLOW)
-    label("title-stats.svg", "HIGH SCORES", GREEN)
-    label("title-stack.svg", "LOADOUT", PURPLE)

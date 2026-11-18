@@ -1,7 +1,7 @@
-name: Pixel snake
+name: Profile graphics
 
-# Redraws the contribution-graph snake once a day and pushes it to the `output` branch.
-# No artifacts are uploaded, so it uses no Actions storage.
+# Once a day: redraws the pixel snake and the 3D contribution graph and pushes them
+# to the `output` branch. No artifacts are uploaded, so it uses no Actions storage.
 
 on:
   schedule:
@@ -15,13 +15,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: snake
+  group: profile-graphics
   cancel-in-progress: true
 
 jobs:
-  snake:
+  graphics:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: Platane/snk/svg-only@v3
         with:
@@ -30,14 +30,21 @@ jobs:
             dist/pixel-snake.svg?palette=github-light&color_snake=#ff4fd8
             dist/pixel-snake-dark.svg?palette=github-dark&color_snake=#ff4fd8&color_dots=#161b22,#1c1245,#7c5cff,#ff4fd8,#3df5ff
 
+      - name: 3D contribution graph
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          USERNAME: ${{ github.repository_owner }}
+
       - name: Push to the output branch
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          mv profile-3d-contrib dist/
           cd dist
           git init -q -b output
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -qm "Update pixel snake"
+          git commit -qm "Update profile graphics"
           git push -qf "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" output
