@@ -92,10 +92,7 @@ const apurv = {
 
 ## 🏆 High scores
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Apurvsheldiya25&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0d1117&title_color=ff8a3d&icon_color=3df5ff&text_color=f4f1ff&ring_color=ff8a3d&rank_icon=github" alt="GitHub stats"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Apurvsheldiya25&layout=compact&langs_count=8&hide_border=true&bg_color=0d1117&title_color=ff8a3d&text_color=f4f1ff" alt="Top languages"/>
-</p>
+<img src="https://raw.githubusercontent.com/Apurvsheldiya25/Apurvsheldiya25/output/pixel-stats.svg" width="100%" alt="GitHub stats including private repos: contributions, commits, pull requests, reviews, issues and repos"/>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=Apurvsheldiya25&hide_border=true&background=0d1117&ring=ff8a3d&fire=ffd23f&currStreakLabel=3df5ff&sideLabels=f4f1ff&currStreakNum=f4f1ff&sideNums=f4f1ff&dates=8a84b8&stroke=1c1245" alt="Contribution streak"/>

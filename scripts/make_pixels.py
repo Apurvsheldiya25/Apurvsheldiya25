@@ -10,7 +10,7 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "assets")
 os.makedirs(OUT, exist_ok=True)
 
 NIGHT, NIGHT2 = "#070b1a", "#1a1040"
-PINK, CYAN, YELLOW, GREEN, PURPLE, WHITE = "#ff8a3d", "#3df5ff", "#ffd23f", "#6bff8a", "#7c5cff", "#f4f1ff"
+ORANGE, CYAN, YELLOW, GREEN, PURPLE, WHITE = "#ff8a3d", "#3df5ff", "#ffd23f", "#6bff8a", "#7c5cff", "#f4f1ff"
 
 # ---------------------------------------------------------------- 5x7 pixel font
 F = {
@@ -60,6 +60,9 @@ F = {
     ":": ["     ", "  #  ", "     ", "     ", "     ", "  #  ", "     "],
     "!": ["  #  ", "  #  ", "  #  ", "  #  ", "  #  ", "     ", "  #  "],
     "?": [" ### ", "#   #", "    #", "   # ", "  #  ", "     ", "  #  "],
+    ",": ["     ", "     ", "     ", "     ", "     ", "  #  ", " #   "],
+    "(": ["   # ", "  #  ", " #   ", " #   ", " #   ", "  #  ", "   # "],
+    ")": [" #   ", "  #  ", "   # ", "   # ", "   # ", "  #  ", " #   "],
     "&": [" ##  ", "#  # ", "# #  ", " #   ", "# # #", "#  # ", " ## #"],
     " ": ["     "] * 7,
 }
@@ -112,7 +115,7 @@ def hero():
         f'<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">'
         f'<stop offset="0" stop-color="{NIGHT}"/><stop offset="1" stop-color="{NIGHT2}"/></linearGradient>'
         f'<linearGradient id="name" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="reflect">'
-        f'<stop offset="0" stop-color="{PINK}"/><stop offset=".5" stop-color="{YELLOW}"/><stop offset="1" stop-color="{CYAN}"/>'
+        f'<stop offset="0" stop-color="{ORANGE}"/><stop offset=".5" stop-color="{YELLOW}"/><stop offset="1" stop-color="{CYAN}"/>'
         f'<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="1200 0" dur="6s" repeatCount="indefinite"/>'
         f"</linearGradient>"
         f'<pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000" opacity=".22"/></pattern>'
@@ -123,7 +126,7 @@ def hero():
     for _ in range(90):
         x, y = rnd.randrange(0, W, 3), rnd.randrange(0, 250, 3)
         s = rnd.choice([3, 3, 3, 6])
-        col = rnd.choice([WHITE, WHITE, CYAN, YELLOW, PINK])
+        col = rnd.choice([WHITE, WHITE, CYAN, YELLOW, ORANGE])
         parts.append(
             f'<rect class="tw" x="{x}" y="{y}" width="{s}" height="{s}" fill="{col}" '
             f'style="animation-duration:{rnd.uniform(1.6, 4.5):.2f}s;animation-delay:-{rnd.uniform(0, 4):.2f}s"/>'
@@ -181,7 +184,7 @@ def hero():
         for wy in range(ground - bh + 12, ground - 12, 18):
             for wx in range(x + 12, x + bw - 12, 18):
                 if rnd.random() < 0.45:
-                    col = rnd.choice([YELLOW, YELLOW, CYAN, PINK])
+                    col = rnd.choice([YELLOW, YELLOW, CYAN, ORANGE])
                     cls = ' class="flick"' if rnd.random() < 0.35 else ""
                     st = f' style="animation-delay:-{rnd.uniform(0, 6):.1f}s;animation-duration:{rnd.uniform(3, 8):.1f}s"' if cls else ""
                     parts.append(f'<rect{cls}{st} x="{wx}" y="{wy}" width="6" height="6" fill="{col}" opacity=".85"/>')
@@ -253,7 +256,7 @@ def hud():
         "  llllll  ",
         " LLLLLLLL ",
     ]
-    cmap = {"#": "#2b1a0f", "s": "#f1c27d", "m": "#c26b5a", "c": PINK, "l": "#b7b2d9", "L": "#8a84b8"}
+    cmap = {"#": "#2b1a0f", "s": "#f1c27d", "m": "#c26b5a", "c": ORANGE, "l": "#b7b2d9", "L": "#8a84b8"}
     p = 10
     for r_, row in enumerate(me):
         for c_, ch in enumerate(row):
@@ -263,13 +266,13 @@ def hud():
     parts.append(f'<path d="{text_path("PLAYER 1", 52, 205, 3)}" fill="{YELLOW}"/>')
     parts.append(f'<path class="blink" d="{text_path("READY", 70, 235, 3)}" fill="{GREEN}"/>')
     # stats
-    lines = [("CLASS", "AI PRODUCT BUILDER", CYAN), ("GUILD", "OPTIQAI - FOUNDER", PINK), ("QUESTS", "OPTIQAI  SUPERCLIP  CLEBBY", YELLOW)]
+    lines = [("CLASS", "AI PRODUCT BUILDER", CYAN), ("GUILD", "OPTIQAI - FOUNDER", ORANGE), ("QUESTS", "OPTIQAI  SUPERCLIP  CLEBBY", YELLOW)]
     for i, (k, v, col) in enumerate(lines):
         y = 50 + i * 34
         parts.append(f'<path d="{text_path(k + ":", 220, y, 3)}" fill="#8a84b8"/>')
         parts.append(f'<path d="{text_path(v, 360, y, 3)}" fill="{col}"/>')
     # skill bars
-    skills = [("TYPESCRIPT", 92, CYAN), ("REACT", 90, PINK), ("AI UX", 88, YELLOW), ("ELECTRON", 80, GREEN), ("PRODUCT", 94, PURPLE)]
+    skills = [("TYPESCRIPT", 92, CYAN), ("REACT", 90, ORANGE), ("AI UX", 88, YELLOW), ("ELECTRON", 80, GREEN), ("PRODUCT", 94, PURPLE)]
     bx, bw = 360, 420
     for i, (k, lvl, col) in enumerate(skills):
         y = 160 + i * 22
@@ -285,7 +288,7 @@ def hud():
     ix = 900
     parts.append(f'<path d="{text_path("INVENTORY", ix, 50, 3)}" fill="{YELLOW}"/>')
     items = ["TS", "RE", "VI", "TW", "SB", "EL", "GH", "AI"]
-    cols = [CYAN, PINK, PURPLE, CYAN, GREEN, "#9feaf9", WHITE, YELLOW]
+    cols = [CYAN, ORANGE, PURPLE, CYAN, GREEN, "#9feaf9", WHITE, YELLOW]
     for i, it in enumerate(items):
         x, y = ix + (i % 4) * 66, 84 + (i // 4) * 66
         parts.append(f'<rect x="{x}" y="{y}" width="56" height="56" fill="#1c1245" stroke="{cols[i]}" stroke-width="3"/>')
@@ -309,7 +312,7 @@ def hud():
 # ---------------------------------------------------------------- divider + footer
 def divider():
     W, H, p = 1200, 18, 12
-    cols = [PINK, YELLOW, CYAN, GREEN, PURPLE]
+    cols = [ORANGE, YELLOW, CYAN, GREEN, PURPLE]
     parts = [
         f'<rect class="d" x="{i * p}" y="3" width="{p - 3}" height="{p}" fill="{cols[i % 5]}" style="animation-delay:{i * 0.04:.2f}s"/>'
         for i in range(W // p)
@@ -371,7 +374,7 @@ def desk():
     parts.append(R(4, 13, 14, 1, "#3a2a7a"))
     # shelf with books + plant
     parts.append(R(60, 10, 16, 1, "#4a3420"))
-    for i, c in enumerate([PINK, CYAN, YELLOW, PURPLE, GREEN]):
+    for i, c in enumerate([ORANGE, CYAN, YELLOW, PURPLE, GREEN]):
         parts.append(R(61 + i * 2, 5 + (i % 2), 2, 5 - (i % 2), c))
     parts.append(R(72, 8, 3, 2, "#a0522d"))
     parts.append(f'<g class="sway" style="transform-origin:{73.5 * p}px {8 * p}px">' + R(73, 5, 1, 3, GREEN) + R(72, 5, 1, 1, GREEN) + R(74, 4, 1, 2, GREEN) + "</g>")
@@ -394,7 +397,7 @@ def desk():
             w = rnd.randint(2, 6)
             if x + w > 55:
                 break
-            lines.append(f'<rect x="{x * p}" y="{(14 + y) * p}" width="{w * p}" height="{p - 2}" fill="{rnd.choice([PINK, CYAN, YELLOW, GREEN, PURPLE, WHITE])}"/>')
+            lines.append(f'<rect x="{x * p}" y="{(14 + y) * p}" width="{w * p}" height="{p - 2}" fill="{rnd.choice([ORANGE, CYAN, YELLOW, GREEN, PURPLE, WHITE])}"/>')
             x += w + 1
         y += 2 if rnd.random() < 0.85 else 4
     scroll = y * p
@@ -409,13 +412,13 @@ def desk():
     cat = [(9, 36, 6, 7), (10, 34, 4, 3), (9, 33, 1, 2), (13, 33, 1, 2)]
     for x, y_, w, h in cat:
         parts.append(R(x, y_, w, h, "#e8e6f0"))
-    parts += [R(11, 35, 1, 1, GREEN, ' class="blink2"'), R(13, 35, 1, 1, GREEN, ' class="blink2"'), R(12, 36, 1, 1, PINK)]
+    parts += [R(11, 35, 1, 1, GREEN, ' class="blink2"'), R(13, 35, 1, 1, GREEN, ' class="blink2"'), R(12, 36, 1, 1, ORANGE)]
     parts.append('<g class="tA">' + R(15, 40, 3, 1, "#e8e6f0") + R(17, 37, 1, 3, "#e8e6f0") + "</g>")
     parts.append('<g class="tB">' + R(15, 42, 4, 1, "#e8e6f0") + R(18, 40, 1, 2, "#e8e6f0") + "</g>")
     # developer (back view) on chair, nodding while typing
     dev = (
         R(34, 32, 12, 3, "#2b1a0f") + R(33, 35, 14, 6, "#2b1a0f") + R(34, 41, 12, 1, "#f1c27d")
-        + R(30, 42, 20, 6, PINK) + R(28, 45, 24, 10, PINK) + R(39, 42, 2, 4, "#d9661f")
+        + R(30, 42, 20, 6, ORANGE) + R(28, 45, 24, 10, ORANGE) + R(39, 42, 2, 4, "#d9661f")
         + R(36, 39, 1, 3, CYAN) + R(43, 39, 1, 3, CYAN) + R(35, 38, 10, 1, CYAN)
     )
     parts.append(f'<g class="nod">{dev}</g>')

@@ -23,6 +23,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Pixel stats card (private contributions included)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p dist
+          python3 scripts/stats_card.py dist/pixel-stats.svg
+
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -35,6 +46,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           USERNAME: ${{ github.repository_owner }}
+
+      - name: Remove star and fork counters from the 3D graph
+        shell: python
+        run: |
+          import glob, re
+          # Each counter is an icon <g transform="translate(...), scale(2)"> followed by its number <text>.
+          pat = re.compile(r'<g transform="translate\([\d.]+, [\d.]+\), scale\(2\)"><path[^>]*></path></g><text[^>]*>.*?</text>', re.S)
+          for f in glob.glob("profile-3d-contrib/*.svg"):
+              s = open(f, encoding="utf-8").read()
+              s, n = pat.subn("", s)
+              open(f, "w", encoding="utf-8").write(s)
+              print(f, "removed", n)
 
       - name: Push to the output branch
         env:
