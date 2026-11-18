@@ -101,7 +101,7 @@ const apurv = {
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Apurvsheldiya25&bg_color=0d1117&color=f4f1ff&line=ff8a3d&point=3df5ff&area=true&area_color=7c5cff&hide_border=true&radius=8" width="100%" alt="Contribution activity graph"/>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Apurvsheldiya25/Apurvsheldiya25/output/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph"/>
+  <img src="https://raw.githubusercontent.com/Apurvsheldiya25/Apurvsheldiya25/output/profile-3d-contrib/profile-pixel.svg" width="100%" alt="3D contribution graph"/>
 </p>
 
 <p align="center">

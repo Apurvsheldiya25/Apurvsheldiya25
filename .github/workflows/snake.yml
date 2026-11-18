@@ -48,18 +48,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/3d-settings.json
 
-      - name: Remove star and fork counters from the 3D graph
-        shell: python
-        run: |
-          import glob, re
-          # Each counter is an icon <g transform="translate(...), scale(2)"> followed by its number <text>.
-          pat = re.compile(r'<g transform="translate\([\d.]+, [\d.]+\), scale\(2\)"><path[^>]*></path></g><text[^>]*>.*?</text>', re.S)
-          for f in glob.glob("profile-3d-contrib/*.svg"):
-              s = open(f, encoding="utf-8").read()
-              s, n = pat.subn("", s)
-              open(f, "w", encoding="utf-8").write(s)
-              print(f, "removed", n)
+      # Radar chart, language donut and star/fork counters only see public repos: drop them.
+      - name: Tidy the 3D graph
+        run: python3 scripts/clean_3d.py profile-3d-contrib/profile-pixel.svg
 
       - name: Push to the output branch
         env:
